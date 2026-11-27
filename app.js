@@ -42,7 +42,7 @@ function renderCart(){
  const ids=Object.keys(cart).filter(i=>cart[i]>0);
  const n=ids.reduce((a,i)=>a+cart[i],0);
  $("#cnt").textContent=n;$("#empty").hidden=ids.length>0;
- $("#items").innerHTML=ids.map(i=>`<div class="row"><span>${pp(i).name} · ${sz(i)} ${t("ml")}</span><span class="qty"><button data-m="${i}">−</button><span>${cart[i]}</span><button data-a="${i}">+</button></span></div>`).join("");
+ $("#items").innerHTML=ids.map(i=>`<div class="row"><span><bdi>${pp(i).name}</bdi> · <bdi>${sz(i)} ${t("ml")}</bdi></span><span class="qty"><button data-m="${i}">−</button><span>${cart[i]}</span><button data-a="${i}">+</button></span></div>`).join("");
  $("#total").textContent=n*PRICE+" "+t("mad");
  const lines=ids.map(i=>`- ${pp(i).name} (${sz(i)} ml) x${cart[i]}`);
  const nm=$("#name").value.trim(),ct=$("#city").value.trim();
