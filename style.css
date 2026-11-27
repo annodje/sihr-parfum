@@ -158,7 +158,7 @@ h2:before{content:"";display:block;width:100%;height:28px;margin:0 auto 14px;bac
 footer{border-top:0;position:relative;padding-top:40px}
 footer:before{height:28px;margin:-40px 0 22px;background:var(--strip) repeat-x center/auto 28px;opacity:.9}
 footer:after{content:"";display:block;width:56px;height:56px;margin:14px auto 0;background:var(--arch) no-repeat center/contain;opacity:.8}
-.panel{background-image:var(--star);background-size:48px;background-color:var(--bg2)}
+.panel{background:linear-gradient(180deg,#44101f,#2e0a14)}
 .panel:before{height:22px;background-size:auto 20px}
 html,body{overflow-x:clip}
 
