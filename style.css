@@ -104,3 +104,30 @@ footer{padding-bottom:90px}
 .media img,.dart img{width:100%;height:auto;display:block}
 .media img{aspect-ratio:1/1.1;object-fit:cover}
 .slide img{max-width:100%}
+
+/* v3 moroccan ornaments */
+:root{--star:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='none' stroke='%23e3c26b' stroke-width='1'%3E%3Crect x='10' y='10' width='28' height='28'/%3E%3Crect x='10' y='10' width='28' height='28' transform='rotate%2845 24 24%29'/%3E%3Ccircle cx='24' cy='24' r='5'/%3E%3Cpath d='M0 0L10 10M48 0L38 10M0 48L10 38M48 48L38 38'/%3E%3C/g%3E%3C/svg%3E");--band:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='14' viewBox='0 0 32 14'%3E%3Cg fill='none' stroke='%23e3c26b' stroke-width='1.2'%3E%3Cpath d='M16 1L23 7L16 13L9 7Z'/%3E%3Ccircle cx='16' cy='7' r='1.6' fill='%23e3c26b'/%3E%3Cpath d='M0 7H9M23 7H32'/%3E%3C/g%3E%3C/svg%3E");--divd:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='22' viewBox='0 0 220 22'%3E%3Cg fill='none' stroke='%23e3c26b' stroke-width='1.2'%3E%3Cpath d='M0 11H80M140 11H220'/%3E%3Cpath d='M110 1L119 11L110 21L101 11Z'/%3E%3Cpath d='M110 6L114 11L110 16L106 11Z' fill='%23e3c26b'/%3E%3Cpath d='M88 11l8-5 8 5-8 5zM116 11l8-5 8 5-8 5z' transform='translate%28-2 0%29'/%3E%3C/g%3E%3C/svg%3E");--arch:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='70' viewBox='0 0 90 70'%3E%3Cg fill='none' stroke='%23e3c26b' stroke-width='1.6'%3E%3Cpath d='M8 70V38C8 18 30 12 45 2C60 12 82 18 82 38V70'/%3E%3Cpath d='M18 70V40C18 25 34 21 45 13C56 21 72 25 72 40V70' stroke-width='1' opacity='.7'/%3E%3Cpath d='M45 30L51 38L45 46L39 38Z' fill='%23e3c26b'/%3E%3C/g%3E%3C/svg%3E");--corner:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='34' viewBox='0 0 34 34'%3E%3Cg fill='none' stroke='%23e3c26b' stroke-width='1.5'%3E%3Cpath d='M2 32V8Q2 2 8 2H32'/%3E%3Cpath d='M8 32V12Q8 8 12 8H32' opacity='.6'/%3E%3Cpath d='M14 14l4-4 4 4-4 4z' fill='%23e3c26b'/%3E%3C/g%3E%3C/svg%3E")}
+body:before{content:"";position:fixed;inset:0;background:var(--star);opacity:.05;pointer-events:none;z-index:0}
+.top,.hero,.wrap,footer{position:relative;z-index:1}
+.top{z-index:5}
+.top:after{content:"";position:absolute;left:0;right:0;bottom:-8px;height:8px;background:var(--band) repeat-x center/auto 8px;opacity:.75;pointer-events:none}
+.hero:before{content:"";display:block;width:90px;height:70px;margin:0 auto 6px;background:var(--arch) no-repeat center/contain}
+.carousel:before,.carousel:after{content:"";position:absolute;width:34px;height:34px;background:var(--corner) no-repeat center/contain;z-index:2;pointer-events:none}
+.carousel:before{top:-8px;inset-inline-start:2px}
+.carousel:after{top:-8px;inset-inline-end:2px;transform:scaleX(-1)}
+[dir=rtl] .carousel:after{transform:none}
+[dir=rtl] .carousel:before{transform:scaleX(-1)}
+.slides{border:1.5px solid rgba(227,194,107,.6);box-shadow:0 18px 50px rgba(0,0,0,.55),0 0 0 5px #2a0610,0 0 0 6px rgba(227,194,107,.45)}
+h2:after{width:220px;height:22px;background:var(--divd) no-repeat center/contain}
+.card{position:relative;border:1px solid rgba(227,194,107,.45);box-shadow:inset 0 0 0 3px #2a0610,inset 0 0 0 4px rgba(227,194,107,.25)}
+.card:before{content:"";position:absolute;top:2px;inset-inline-end:2px;width:22px;height:22px;background:var(--corner) no-repeat center/contain;z-index:2;pointer-events:none;opacity:.9;transform:scaleX(-1)}
+[dir=rtl] .card:before{transform:none}
+.media{border-radius:26px 26px 10px 10px/22px 22px 10px 10px;border:1px solid rgba(227,194,107,.4)}
+.media .badge{top:auto;bottom:8px}
+.how ol{list-style:none;padding:0;counter-reset:s;max-width:420px;margin:auto}
+.how li{counter-increment:s;position:relative;padding:10px 46px;margin:8px 0;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.03)}
+.how li:before{content:counter(s);position:absolute;top:50%;inset-inline-start:10px;transform:translateY(-50%) rotate(45deg);width:24px;height:24px;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold);font-size:0}
+.how li:after{content:counter(s);position:absolute;top:50%;inset-inline-start:10px;transform:translateY(-50%);width:24px;text-align:center;color:var(--gold);font-weight:700}
+footer:before{content:"";display:block;height:14px;margin:-14px 0 16px;background:var(--band) repeat-x center/auto 14px;opacity:.8}
+.panel{border-top:2px solid var(--gold)}
+.panel:before{content:"";display:block;height:14px;margin:0 0 8px;background:var(--band) repeat-x center/auto 12px;opacity:.7}
