@@ -47,3 +47,5 @@ input{width:100%;padding:10px;border-radius:10px;border:1px solid rgba(227,194,1
 .notes{background:rgba(255,255,255,.05);border-radius:12px;padding:10px 14px;margin:10px 0}
 .notes div{display:flex;gap:10px}.notes b{color:var(--gold);min-width:60px}
 .dn{text-align:center;margin:0}
+
+.sz{background:#220510;color:var(--ink);border:1px solid rgba(227,194,107,.4);border-radius:10px;padding:6px;margin:0 0 8px;font:inherit}
