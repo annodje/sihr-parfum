@@ -160,3 +160,4 @@ footer:before{height:28px;margin:-40px 0 22px;background:var(--strip) repeat-x c
 footer:after{content:"";display:block;width:56px;height:56px;margin:14px auto 0;background:var(--arch) no-repeat center/contain;opacity:.8}
 .panel{background-image:var(--star);background-size:48px;background-color:var(--bg2)}
 .panel:before{height:22px;background-size:auto 20px}
+html,body{overflow-x:clip}
