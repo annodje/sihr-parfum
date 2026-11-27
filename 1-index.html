@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>سحر بارفان | Sihr Parfum</title>
+<meta name="description" content="سحر بارفان: عطور فاخرة 50 مل بـ 49 درهم. الطلب عبر واتساب. / Sihr Parfum: parfums 50 ml à 49 MAD, commande via WhatsApp.">
+<meta name="theme-color" content="#3a0a17">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#"><span class="mark">س</span><span><b data-i="brand">سحر بارفان</b><small>SIHR PARFUM</small></span></a>
+  <div class="actions">
+    <button id="lang" class="chip" aria-label="Language">FR</button>
+    <button id="cartBtn" class="chip gold"><span data-i="cart">السلة</span> <span id="cnt">0</span></button>
+  </div>
+</header>
+
+<section class="hero">
+  <p class="eyebrow" data-i="eyebrow">عطور فاخرة</p>
+  <h1 data-i="h1">اختار سحرك</h1>
+  <p class="sub" data-i="sub">عطور في قارورة 50 مل. الثمن 49 درهم فقط. الطلب سهل عبر واتساب.</p>
+  <a class="btn" href="#shop" data-i="shop">شوف العطور</a>
+</section>
+
+<section id="shop" class="wrap">
+  <h2 data-i="catalog">الكتالوج</h2>
+  <div id="grid" class="grid"></div>
+
+  <h2 data-i="more">منتجات أخرى</h2>
+  <div class="grid"><article class="card oil">
+    <div class="art"><svg viewBox="0 0 200 260"><use href="#oilbottle"/></svg></div>
+    <h3 data-i="oil">زيت الجسم</h3>
+    <p class="muted" data-i="oilnote">قريبا. سولنا على واتساب للتفاصيل والثمن.</p>
+    <a class="btn small" id="oilAsk" target="_blank" rel="noopener" data-i="ask">سول على واتساب</a>
+  </article></div>
+</section>
+
+<section class="wrap how">
+  <h2 data-i="howT">كيفاش تطلب</h2>
+  <ol><li data-i="h1s">زيد العطر للسلة</li><li data-i="h2s">دوز الطلب عبر واتساب</li><li data-i="h3s">كنتفاهمو معاك على التوصيل والأداء</li></ol>
+</section>
+
+<footer>
+  <p>© Sihr Parfum · <a id="waFoot" target="_blank" rel="noopener">WhatsApp 06 93 92 97 16</a></p>
+</footer>
+
+<div id="drawer" class="drawer" hidden>
+  <div class="panel">
+    <button class="x" id="closeCart" aria-label="close">✕</button>
+    <h2 data-i="cart">السلة</h2>
+    <div id="items"></div>
+    <p id="empty" class="muted" data-i="empty">السلة فارغة.</p>
+    <div class="total"><span data-i="total">المجموع</span><b id="total">0</b></div>
+    <label><span data-i="name">الاسم</span><input id="name" autocomplete="name"></label>
+    <label><span data-i="city">المدينة (اختياري)</span><input id="city" autocomplete="address-level2"></label>
+    <a id="send" class="btn" target="_blank" rel="noopener" data-i="send">طلب عبر واتساب</a>
+    <p class="muted tiny" data-i="cod">الأداء عند التوصيل، كنتفاهمو عليه فواتساب.</p>
+  </div>
+</div>
+
+<div id="modal" class="drawer" hidden>
+  <div class="panel" id="detail"></div>
+</div>
+
+<svg width="0" height="0" style="position:absolute">
+ <defs>
+  <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#8a6a1f"/><stop offset=".5" stop-color="#f1d98a"/><stop offset="1" stop-color="#9c7a28"/></linearGradient>
+  <linearGradient id="gl" x1="0" x2="1"><stop offset="0" stop-color="#d9dde2" stop-opacity=".55"/><stop offset=".4" stop-color="#fff" stop-opacity=".8"/><stop offset="1" stop-color="#9aa0a8" stop-opacity=".5"/></linearGradient>
+  <symbol id="bottle" viewBox="0 0 200 260">
+   <circle cx="100" cy="30" r="22" fill="url(#g)"/>
+   <rect x="86" y="50" width="28" height="22" fill="url(#g)"/>
+   <rect x="52" y="72" width="96" height="170" rx="14" fill="url(#gl)" stroke="#f1d98a" stroke-opacity=".5"/>
+   <path d="M70 232V150a30 30 0 0 1 60 0v82z" fill="#0c0c0c"/>
+   <path d="M70 232V150a30 30 0 0 1 60 0v82z" fill="none" stroke="url(#g)" stroke-width="2"/>
+  </symbol>
+  <symbol id="oilbottle" viewBox="0 0 200 260">
+   <rect x="84" y="20" width="32" height="30" rx="4" fill="url(#g)"/>
+   <rect x="60" y="50" width="80" height="190" rx="18" fill="#5a2a08" stroke="#f1d98a" stroke-opacity=".6"/>
+   <path d="M76 230V150a24 24 0 0 1 48 0v80z" fill="#0c0c0c" stroke="url(#g)" stroke-width="2"/>
+  </symbol>
+ </defs>
+</svg>
+<script src="app.js"></script>
+</body>
+</html>
