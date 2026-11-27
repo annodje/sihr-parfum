@@ -161,3 +161,9 @@ footer:after{content:"";display:block;width:56px;height:56px;margin:14px auto 0;
 .panel{background-image:var(--star);background-size:48px;background-color:var(--bg2)}
 .panel:before{height:22px;background-size:auto 20px}
 html,body{overflow-x:clip}
+
+/* inspiration line */
+.insp{max-width:520px;margin:0 auto 16px;padding:8px 16px;font-size:13.5px;line-height:1.7;color:var(--gold2);border:1px solid var(--line);border-radius:12px;background:rgba(227,194,107,.06);text-align:center}
+.insp.small{font-size:12.5px;padding:6px 12px;margin:6px auto 10px}
+footer .insp{border:0;background:none;color:var(--mut)}
+.notes .nn{display:block;color:var(--mut);font-size:12px;margin-bottom:6px}
