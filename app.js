@@ -1,6 +1,7 @@
 const WA="212693929716",PRICE=49;
 // notes: fill {top,heart,base} (ar/fr) only from Ayoub's posters. Never invent.
 const IMG={"baccarat-rouge-540":"2-baccarat-rouge-540.jpg","si":"3-si.jpg","scandal":"4-scandal.jpg","prada-paradoxe":"5-prada-paradoxe.jpg","scandalous":"6-scandalous.jpg","kisa-tango":"7-kisa-tango.jpg","mon-guerlain":"9-mon-guerlain.jpg","nina":"10-nina.jpg","hypnotic-poison":"4-hypnotic-poison.jpg","giordani-gold":"3-giordani-gold.jpg","incandescence-her":"5-incandescence-her.jpg","burberry":"1-burberry.jpg","coco-chanel":"2-coco-chanel.jpg","victorias-secret":"11-victorias-secret.jpg","lv-contre-moi":"7-lv-contre-moi.jpg","kayali":"6-kayali.jpg","march-milo":"8-march-milo.jpg","weekend":"12-weekend.jpg"};
+// Notes for weekend, mon-guerlain, nina, hypnotic-poison, lv-contre-moi: cross-checked published notes (Fragrantica/Parfumo/retail), not from posters.
 // Notes read from Ayoub's posters (Arabic). FR is a translation. Never invent.
 const N={
 "baccarat-rouge-540":{top:{ar:"الزعفران، الياسمين",fr:"Safran, jasmin"},heart:{ar:"العنبر، الأخشاب الشفافة",fr:"Ambre, bois translucides"},base:{ar:"خشب الأرز، راتنجات التنوب (الراتنجات العطرية)",fr:"Bois de cèdre, résines de sapin (résines aromatiques)"}},
@@ -8,6 +9,11 @@ const N={
 "scandal":{top:{ar:"البرتقال الأحمر واليوسفي",fr:"Orange sanguine et mandarine"},heart:{ar:"العسل والغاردينيا وزهر البرتقال",fr:"Miel, gardénia et fleur d'oranger"},base:{ar:"الباتشولي والكراميل وشمع العسل",fr:"Patchouli, caramel et cire d'abeille"}},
 "prada-paradoxe":{top:{ar:"البرتقال الإيطالي، الكمثري، البرغموت",fr:"Orange d'Italie, poire, bergamote"},heart:{ar:"زهرة البرتقال، الياسمين، النيرولي",fr:"Fleur d'oranger, jasmin, néroli"},base:{ar:"الفانيليا، المسك الأبيض، العنبر",fr:"Vanille, musc blanc, ambre"}},
 "scandalous":{top:{ar:"التوت الأحمر، البرغموت",fr:"Baies rouges, bergamote"},heart:{ar:"الياسمين، زهر البرتقال، الورد",fr:"Jasmin, fleur d'oranger, rose"},base:{ar:"الفانيليا، الباتشولي، المسك",fr:"Vanille, patchouli, musc"}},
+"weekend":{top:{ar:"الريزدا، اليوسفي، المريمية",fr:"Réséda, mandarine, sauge"},heart:{ar:"النكتارين، الياسنت، زهر الخوخ، ثمر الورد البري، السوسن، السيكلامن، جذور البنفسج",fr:"Nectarine, jacinthe, fleur de pêcher, cynorrhodon, iris, cyclamen, racine de violette"},base:{ar:"المسك، خشب الصندل، خشب الأرز",fr:"Musc, bois de santal, bois de cèdre"}},
+"mon-guerlain":{top:{ar:"اللافندر، البرغموت",fr:"Lavande, bergamote"},heart:{ar:"ياسمين سامباك، السوسن",fr:"Jasmin sambac, iris"},base:{ar:"فانيلا تاهيتي، خشب الصندل",fr:"Vanille de Tahiti, bois de santal"}},
+"nina":{top:{ar:"ليمون أمالفي، الليمون الأخضر",fr:"Citron d'Amalfi, citron vert"},heart:{ar:"التفاح، الفاوانيا، البرالين، الداتورا",fr:"Pomme, pivoine, praliné, datura"},base:{ar:"خشب شجرة التفاح، خشب الأرز، المسك",fr:"Bois de pommier, cèdre, musc"}},
+"hypnotic-poison":{top:{ar:"اللوز المر، الكراوية",fr:"Amande amère, carvi"},heart:{ar:"ياسمين سامباك",fr:"Jasmin sambac"},base:{ar:"الفانيليا، المسك",fr:"Vanille, musc"}},
+"lv-contre-moi":{top:{ar:"أعشاب، الليمون، البرغموت",fr:"Herbes, citron, bergamote"},heart:{ar:"المغنوليا، زهر البرتقال، الكمثرى، الورد",fr:"Magnolia, fleur d'oranger, poire, rose"},base:{ar:"فانيلا تاهيتي، فانيلا مدغشقر، الكاكاو، الأمبريت (مسك)",fr:"Vanille de Tahiti, vanille de Madagascar, cacao, ambrette (musc)"}},
 "kisa-tango":{top:{ar:"حمضيات منعشة",fr:"Agrumes frais"},heart:{ar:"زهور ناعمة",fr:"Fleurs douces"},base:{ar:"عنبر وخشب فاخر",fr:"Ambre et bois précieux"}}
 };
 const P=[
