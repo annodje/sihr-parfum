@@ -167,3 +167,4 @@ html,body{overflow-x:clip}
 .insp.small{font-size:12.5px;padding:6px 12px;margin:6px auto 10px}
 footer .insp{border:0;background:none;color:var(--mut)}
 .notes .nn{display:block;color:var(--mut);font-size:12px;margin-bottom:6px}
+.hero .insp{width:calc(100% - 32px)}
