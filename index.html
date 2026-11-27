@@ -11,7 +11,7 @@
 </head>
 <body>
 <header class="top">
-  <a class="brand" href="#"><img class="logo" src="img/1-logo.png" alt="Sihr Parfum" width="56" height="44"></a>
+  <a class="brand" href="#"><img class="logo" src="img/1-logo.png" alt="Sihr Parfum" width="61" height="48"></a>
   <div class="actions">
     <button id="lang" class="chip" aria-label="Language">FR</button>
     <button id="cartBtn" class="chip gold"><span data-i="cart">السلة</span> <span id="cnt">0</span></button>
@@ -21,7 +21,8 @@
 <section class="hero">
   <p class="eyebrow" data-i="eyebrow">عطور فاخرة</p>
   <h1 data-i="h1">اختار سحرك</h1>
-  <p class="sub" data-i="sub">عطور في قارورة 50 مل. الثمن 49 درهم فقط. الطلب سهل عبر واتساب.</p>
+  <p class="sub" data-i="sub">عطور في قارورة 50 مل أو 20 مل. الثمن 49 درهم فقط للحجمين.</p>
+  <div class="carousel"><div id="hero" class="slides"></div><div id="dots" class="dots"></div></div>
   <a class="btn" href="#shop" data-i="shop">شوف العطور</a>
 </section>
 
@@ -47,6 +48,8 @@
   <p>© Sihr Parfum · <a id="waFoot" target="_blank" rel="noopener">WhatsApp 06 93 92 97 16</a></p>
 </footer>
 
+<button id="bar" class="bar" hidden><span id="barTxt"></span></button>
+<div id="toast" class="toast"></div>
 <div id="drawer" class="drawer" hidden>
   <div class="panel">
     <button class="x" id="closeCart" aria-label="close">✕</button>
